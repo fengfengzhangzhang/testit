@@ -1,0 +1,75 @@
+.main_w{height:520px;width:100%;}
+.main{height:490px;width:1100px;margin:0 auto;background:#fff;padding-top: 30px;}
+.left_bg{float: left;padding:70px;border-right:1px solid #ccc;}
+.right_reg{height:430px;width:362px;float:right;background:#fff;margin:0 20px 0 0;padding:20px 0 0 28px;}
+.headline{height:54px;width:353px;}
+.headline h2{color:#e73a77;padding-right:44px;font-size:24px;width:120px;display:inline-block;}
+.headline span{display: inline-block;font-size: 12px;color:#a6a696;}
+.headline a{color:#e73a77;font-size:12px;}
+table i{color: #E73A77;}
+table input{height:36px;}
+table tr{height:60px;line-height: 60px;}
+table td{position: relative;}
+table input{outline: none;border:1px solid #ccc;}
+#names{width:290px;height:36px;padding-left:60px;}
+td u{width: 40px;height: 40px;background:url(../images/denglubg.png) no-repeat;position:absolute;top:10px;left:6px;}
+.username{background-position:0 -80px;} 
+.mima{background-position:-40px -80px;}
+   
+#checkMis{width:290px;height:36px;padding-left:60px;}
+
+#btn{height:28px;width:106px;border-radius: 3px;border:1px solid #ccc;background:#f7f7f7;}
+#reg{height:45px;width:350px;border:0;background:#f60182;border-radius:5px;color:#fff;
+margin-top:-40px;}
+#hot_tr{height:45px;}
+.protocol{display: block;
+    width: 330px;
+    height: 50px;
+    font-size: 12px;
+    line-height:50px;
+    position: relative;
+    padding-left:40px;}
+#license{position:absolute;top:15px;left:10px;height:20px;width:20px;}
+.protocol a{display:inline-block;float:right;margin-right:10px;color:#F60182;}
+.protocol u{text-decoration: none;}
+.others{height:40px;width:350px;}
+.others a{width:40px;height:40px;display:inline-block;margin-left:20px;background: url(../images/denglubg.png) no-repeat;}
+.others .teng {background-position:-40px 0;}
+.others .weibo{background-position:0 0;}
+.others .teng:hover{background-position:-40px -40px;}
+.others .weibo:hover{background-position:0 -40px;}
+.deng2{color:#a6a696;line-height:45px;font-size:12px;padding-left: 10px;}
+
+
+.foot2_w{height:60px;width:100%;}
+.foot2{ width: 980px; margin: 0 auto; text-align: center; border-top: #E1E1E1 1px solid; padding-top: 10px; margin-top: 10px; padding-bottom: 10px;font-size:12px;color:#333;background:#f7f7f7;margin-bottom:20px;}
+.uses,.mimas{
+	text-align: center;
+	line-height:20px;
+	font-size:12px;
+	opacity:0.8;
+	border:1px solid #F31F64;
+	position:absolute;
+	top:50px;left:2px;
+	height:20px;
+	width:345px;
+	background:#F7286B;
+	z-index:9;
+	display:none;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
