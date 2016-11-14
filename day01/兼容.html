@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>IE_hack</title>
+		<style type="text/css">
+			    .test {
+					color: #c30;          /* For latest Firefox, chrome, Safari */
+					color: #090\0;        /* For Opera15- */
+					color: #00f\9;        /* For IE6+ */
+					*color: #f00;         /* For IE7 */
+					_color: #ff0;         /* For IE6 */
+				}
+			
+		</style>
+	</head>
+	<body>
+		<!--[if lt IE 9]>
+        	<div class="llqts">
+			    <p>网站改版啦！您的浏览器版本过低，请升级浏览器
+			      	<a target="_blank" rel="nofollow" href="http://windows.microsoft.com/zh-cn/internet-explorer/download-ie">IE9及以上</a>
+			      	或使用<a target="_blank" rel="nofollow" href="http://rj.baidu.com/soft/detail/25718.html?ald">谷歌浏览器</a>
+			      	&nbsp;、&nbsp;<a href="http://www.firefox.com.cn/" target="_blank" rel="nofollow">火狐浏览器</a>
+			      	来体验网站的新功能！
+				</p>
+			</div>
+        <![endif]-->
+    	<div class="test">aaaaa</div>
+	</body>
+</html> 

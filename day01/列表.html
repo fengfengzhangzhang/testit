@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<!--ol表示有序列表
+		start表示起始
+		type表示数类型
+		reversed表示翻转-->
+		
+		<ol start=5 type="A" reversed>
+			<li>晓虎虎虎</li>
+			<li>晓虎虎虎</li>
+			<li>晓虎虎虎</li>
+			<li>晓虎虎虎</li>
+			<li>晓虎虎虎</li>
+		</ol>
+		
+		<!-- progress	是HTML 5中新增的状态交互元素，用来表示页面中的某个任务完成的进度（进程），如下载文件时，文件下载到本地的进度值，可以通过该元素动态展示在页面中，展示的方式既可以使用整数（如1到100），也可以使用百分比（如10%到100%） -->
+<!-- progress	是HTML 5中新增的状态交互元素，用来表示页面中的某个任务完成的进度（进程），如下载文件时，文件下载到本地的进度值，可以通过该元素动态展示在页面中，展示的方式既可以使用整数（如1到100），也可以使用百分比（如10%到100%） -->
+
+		
+		
+		
+		<progress></progress>
+		<progress value="0" max="100" min="0" step="1" id="pro"></progress>
+		<span id="tex">等待下载</span>
+		<button id="btn">开始下载</button>
+	</body>
+	<script type="text/javascript">
+		var btn=document.getElementById("btn");
+		var timer;
+		var n=document.getElementById("pro").value;
+		
+		btn.onclick=function(){
+			clearInterval(timer);
+			timer=setInterval(function(){
+				n++;
+				if(n>100){
+					clearInterval(timer);
+				}else{
+					document.getElementById("pro").value=n;
+					document.getElementById("tex").innerHTML=n+"%";
+				}
+			},50);
+		}
+		
+		
+	</script>
+</html>

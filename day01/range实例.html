@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			*{padding:0;margin:0;}
+			fieldset{width:1000px;margin:0 auto;}
+			#box{height:200px;width:200px;display:inline-block;border: 1px solid #000;
+			background:rgb(255,255,255);}
+			#inner{display: inline-block;}
+		</style>
+	</head>
+	<body>
+		<fieldset>
+			<legend>选择颜色</legend>
+			red:<input type="range" name="range" id="r" value="0" min="0" max="255"/>
+			green:<input type="range" name="range" id="g" value="0" min="0" max="255" />
+			blue:<input type="range" name="range" id="b" value="0" min="0" max="255" />
+			<strong id="inner">rgb(0,0,0)</strong>
+			<div id="box"></div>
+		</fieldset>
+	</body>
+	<script type="text/javascript">
+			var r=document.getElementById("r");
+			var g=document.getElementById("g");
+			var b=document.getElementById("b");
+			var odiv=document.getElementById("box");
+			var str=document.getElementById("inner");
+			window.oninput=function(){
+				odiv.style.background="rgb("+r.value+","+g.value+","+b.value+")";
+				str.innerHTML="rgb("+r.value+","+g.value+","+b.value+")"
+			}
+	
+		
+		
+	</script>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>datalist</title>
+	</head>
+	<body>
+		<!--
+        	input 的list的值要和datalist的id值相等;
+        	lable规定更短版本的选项。
+        -->
+		
+		<input type="text" list="mysearch"/>
+		<datalist id="mysearch">
+			<option value="webkit" label="-webkit"></option>
+			<option value="chrome" label="-webkit"></option>
+			<option value="firefox" label="-moz"></option>
+			<option value="safari" label="-webkit"></option>
+			<option value="ie"></option>
+			<option value="qq"></option>
+			<option value="sogou"></option>
+			<option value="opera"></option>
+		</datalist>
+		
+		<!--
+			oninput只要输入就立即执行
+			onchange输入完成后并失去光标后执行
+		-->
+		
+		<form oninput="out.value=tex1.value*1+tex2.value*1">
+			<input type="text" name="tex1" value="100"/>
+			<input type="text" name="tex2" value="1000"/>
+			<output name="out"></output>
+		</form>
+		
+	</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			input{display: block;}
+			input::-webkit-input-placeholder{
+				color:red;
+				font-size:20px;
+			}
+			input::-moz-input-placeholder{
+				color:red;
+				font-size:20px;
+			}
+			input::-ms-input-placeholder{
+				color:red;
+				font-size:20px;
+			}
+		</style>
+	</head>
+	<body>
+		<!--
+        	1.type=eamil 自行判断邮箱是否正确 自动调起手机键盘
+        	multiple表示可以输入多个值和多个文件
+        	required表示必须；
+        	
+        	2.type=url 自行判断地址是否正确
+        	3.type=search 搜索 在firefox无效
+        	4.type=color拾取颜色 在safari无效
+        	5.number表示数字框max min
+        	6.range表示滚动条max min 
+        	7.file文件上传
+        	8.tel表示电话键盘
+        -->
+		<form>
+			email:<input type="email" name="eamil" required multiple="multiple"/>
+			url:<input type="url" name="url" required multiple="multiple"/>
+			search:<input type="search" name="search" required multiple="multiple"/>
+			file:<input type="file" name="file" />
+			color:<input type="color" name="color"/>
+			number:<input type="number" name="number" max="100" min="23" step="3" value="40"/>
+			range:<input type="range" name="range" max="255" min="0" step="1" value="0"/>
+			<input type="submit" value="提交"/>
+		</form>
+	</body>
+</html>
